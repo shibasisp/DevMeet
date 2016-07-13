@@ -6,9 +6,31 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body>  <nav class = "navbar navbar-inverse navbar-static-top" roles= "navigation">
+    <div class ='container'>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <%=link_to root_path, class: "navbar-brand" do%>
+            <i class="fa fa-user"></i>
+              Dev Meet
+              <% end%>
+      </div>
+      <div class="collapse navbar-collapse" id="main-nav-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to "About", "#"%></li>
+        </ul>
 
-<%= yield %>
+      </div>
+    </div>
+  </nav>
+  <div class=  'container'>
+    <%= yield %>
+  </div>
 
 </body>
 </html>
