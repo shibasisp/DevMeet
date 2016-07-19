@@ -40,6 +40,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
   gem 'stripe', '~> 1.44'
   #Use figaro to hide secret keys
   gem 'figaro', '~> 1.1', '>= 1.1.1'
+  #Use paperclip for Upload managements
+  gem 'paperclip', '~> 4.3', '>= 4.3.6'
 
 group :production do
 	gem 'pg'
