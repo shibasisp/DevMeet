@@ -14,8 +14,10 @@ class ProfilesController < ApplicationController
   	else
   		render action: :new
   	end
-
-
+  end
+  def edit
+  	@user = User.find(params[:user_id])
+  	@profile = @user.profile
   end
 
   private
