@@ -2,7 +2,11 @@
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
+<<<<<<< HEAD
 It is a ruby project.
+=======
+
+>>>>>>> 0a2fd8fb4a4f42c4be43668f2758c09a14fa3d5e
 Things you may want to cover:
 
 * Ruby version
