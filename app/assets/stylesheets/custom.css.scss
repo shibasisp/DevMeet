@@ -1,0 +1,11 @@
+body{
+//Gradient from http://uigradients.com/
+
+background: #c2e59c; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #c2e59c , #64b3f4); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #c2e59c , #64b3f4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+       }
+
+.alert-notice{color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DevMeet</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag "https://js.stripe.com/v2/", type: 'text/javascript' %>
+  <%= javascript_include_tag 'application'%>
+  <%= tag :meta, :name => "stripe-key", :content => STRIPE_PUBLIC_KEY %>
+  <%= csrf_meta_tags %>
+</head>
+<body>  <nav class = "navbar navbar-inverse navbar-static-top" roles= "navigation">
+    <div class ='container'>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          <%=link_to root_path, class: "navbar-brand" do%>
+            <i class="fa fa-users"></i>
+              Dev Meet
+              <% end%>
+      </div>
+      <div class="collapse navbar-collapse" id="main-nav-collapse">
+      <div class="nav navbar-nav navbar-right">
+      <% if  user_signed_in? %>
+          <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: 'btn btn-primary navbar-btn' %>
+      <%else%>
+          <%= link_to "Log In" , new_user_session_path, class: 'btn btn-primary navbar-btn', method: :get %>
+      <%end%>
+
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+          <% if  user_signed_in? %>
+          <li> <%= link_to "My Account", edit_user_registration_path %> </li>
+          <%end%>
+          <li><%= link_to "About", about_path%></li>
+          <li><%= link_to "Contact Us", new_contact_path%></li>
+        </ul>
+
+      </div> <!--Navbar collapse--> 
+    </div>
+  </nav>
+  <div class="container">
+    <%flash.each do |key,value| %>
+      <%= content_tag :div, value, class: "alert alert-#{key}"%>
+    <%end%>
+
+    <%= yield %>
+
+  </div>
+
+</body>
+</html>
