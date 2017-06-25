@@ -1,3 +1,4 @@
 == README
 
 This is an app which build a common platform between entrepreneurs and developers. A platform where entrepreneurs can hire developers and developers can be hired by entrepreneurs. This project was built by me while learning Ruby on Rails.
+
