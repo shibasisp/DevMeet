@@ -1,33 +1,4 @@
 == README
 
-It is a ruby project.
-This README would normally document whatever steps are necessary to get the
-application up and running.
-<<<<<<< HEAD
-It is a ruby project.
-=======
+This is an app which build a common platform between entrepreneurs and developers. A platform where entrepreneurs can hire developers and developers can be hired by entrepreneurs. This project was built by me while learning Ruby on Rails.
 
->>>>>>> 0a2fd8fb4a4f42c4be43668f2758c09a14fa3d5e
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
